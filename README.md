@@ -1,25 +1,30 @@
-BRCA1 DNA Sequence Analyzer and SNP Mutation Simulator
+# BRCA1 DNA Sequence Analyzer and SNP Mutation Simulator
 
-This is a beginner-friendly bioinformatics project built using Python. The project analyses a BRCA1 DNA sequence in FASTA format and performs basic sequence-level analysis such as nucleotide counting, GC content calculation, sliding-window GC visualisation, and SNP mutation simulation.
+This is a beginner-friendly bioinformatics project built using Python. The project analyzes a BRCA1 DNA sequence in FASTA format and performs basic sequence-level analysis such as nucleotide counting, GC content calculation, sliding-window GC visualization, and SNP mutation simulation.
 
 I built this project as part of my transition from a biotechnology background into bioinformatics and computational biology. The goal was to work with a real biological sequence file, understand how genomic data is handled programmatically, and create a clean first-level sequence analysis pipeline.
 
+---
 
-1. Project Overview
+## Project Overview
 
 The project uses a BRCA1 FASTA sequence downloaded from NCBI and processes it using Python. BRCA1 is a well-known human gene associated with DNA repair, and it is widely studied in cancer biology and genomics.
 
 This project does not perform clinical or diagnostic interpretation of BRCA1 variants. Instead, it focuses on foundational bioinformatics skills such as FASTA parsing, sequence cleaning, base composition analysis, GC profiling, visualization, and simple SNP simulation.
 
-2. Dataset Used
+---
 
-* Gene: BRCA1
-* Organism: Homo sapiens
-* Data source: NCBI
-* File format: FASTA
-* Input file used: `sequence.fasta`
+## Dataset Used
 
-3. Features
+* **Gene:** BRCA1
+* **Organism:** Homo sapiens
+* **Data source:** NCBI
+* **File format:** FASTA
+* **Input file used:** `sequence.fasta`
+
+---
+
+## Features
 
 This project performs the following tasks:
 
@@ -34,70 +39,88 @@ This project performs the following tasks:
 * Classifies mutation type as GC to AT, AT to GC, or same-category change
 * Displays a small sequence region around the mutation site
 
-4. Tools and Libraries Used
+---
+
+## Tools and Libraries Used
 
 * Python
 * Matplotlib
 * NCBI FASTA sequence data
 
-5. Project Workflow
+---
 
-a. Load the BRCA1 FASTA file
-b. Extract and clean the DNA sequence
-c. Count nucleotide bases
-d. Calculate total GC content
-e. Perform sliding-window GC analysis
-f. Generate a GC content plot
-g. Simulate a SNP mutation
-h. Compare original and mutated sequence properties
+## Project Workflow
 
-6. Example Output
+1. Load the BRCA1 FASTA file
+2. Extract and clean the DNA sequence
+3. Count nucleotide bases
+4. Calculate total GC content
+5. Perform sliding-window GC analysis
+6. Generate a GC content plot
+7. Simulate a SNP mutation
+8. Compare original and mutated sequence properties
 
+---
+
+## Example Output
+
+```text
 Sequence loaded successfully.
-* No of A: 2368
-* No of T: 1759
-* No of G: 1585
-* No of C: 1376
+No of A: 2368
+No of T: 1759
+No of G: 1585
+No of C: 1376
 
-* Total length: 7088
-* GC Content: 41.77 %
+Total length: 7088
+GC Content: 41.77 %
+```
 
 Example mutation output:
 
-* Original base at position 25 : G
-* Mutated base at position 25 : A
+```text
+Original base at position 25 : G
+Mutated base at position 25 : A
 
 Mutation Region:
-* Original region: CTGACTCCTGAGGAGAAGTCT
-* Mutated region:  CTGACTCCTAAGGAGAAGTCT
-                            ^
+Original region: CTGACTCCTGAGGAGAAGTCT
+Mutated region : CTGACTCCTAAGGAGAAGTCT
+                          ^
 
 Mutation Impact Summary:
 Original 200-base GC Content: 43.5 %
 Mutated 200-base GC Content: 43.0 %
 GC Content Difference: -0.5 %
 Mutation Type: GC to AT change
+```
 
-7. Visualization
+---
+
+## Visualization
 
 The project generates a sliding-window GC content plot across the BRCA1 sequence.
 
 ![GC Content Plot](gc_content_plot.png)
 
-8. Why This Project Matters
+---
+
+## Why This Project Matters
 
 This project helped me understand how biological sequence data can be handled using Python. Instead of manually working with a DNA sequence, the script reads a real FASTA file, processes it, and extracts meaningful sequence-level information.
 
-The project also helped me connect basic programming concepts such as strings, lists, loops, slicing, functions, and conditional statements with real bioinformatics applications. 
+The project also helped me connect basic programming concepts such as strings, lists, loops, slicing, functions, and conditional statements with real bioinformatics applications.
 
-9. Limitations
+---
+
+## Limitations
 
 * This project performs sequence-level analysis only.
 * It does not predict disease risk or clinical significance of BRCA1 mutations.
 * The SNP simulation is used for learning purposes and does not represent a validated biological variant.
 * Protein translation and amino acid impact prediction are not included in this version.
 
-10. Future Improvements
+---
+
+## Future Improvements
 
 Possible future improvements include:
 
@@ -107,3 +130,17 @@ Possible future improvements include:
 * Adding support for multiple FASTA files
 * Exporting results into a CSV file
 * Using Biopython for more advanced sequence analysis
+
+---
+
+## Repository Structure
+
+```text
+BRCA1-DNA-Sequence-Analyzer/
+│
+├── main.py
+├── sequence.fasta
+├── gc_content_plot.png
+├── requirements.txt
+└── README.md
+```
