@@ -13,11 +13,11 @@ This project does not perform clinical or diagnostic interpretation of BRCA1 var
 
 2. Dataset Used
 
-Gene: BRCA1
-Organism: Homo sapiens
-Data source: NCBI
-File format: FASTA
-Input file used: `sequence.fasta`
+* Gene: BRCA1
+* Organism: Homo sapiens
+* Data source: NCBI
+* File format: FASTA
+* Input file used: `sequence.fasta`
 
 3. Features
 
@@ -54,23 +54,23 @@ h. Compare original and mutated sequence properties
 6. Example Output
 
 Sequence loaded successfully.
-No of A: 2368
-No of T: 1759
-No of G: 1585
-No of C: 1376
+* No of A: 2368
+* No of T: 1759
+* No of G: 1585
+* No of C: 1376
 
-Total length: 7088
-GC Content: 41.77 %
+* Total length: 7088
+* GC Content: 41.77 %
 
 Example mutation output:
 
-Original base at position 25 : G
-Mutated base at position 25 : A
+* Original base at position 25 : G
+* Mutated base at position 25 : A
 
 Mutation Region:
-Original region:  CTGACTCCTGAGGAGAAGTCT
-Mutated region: CTGACTCCTAAGGAGAAGTCT
-                                              ^
+* Original region: CTGACTCCTGAGGAGAAGTCT
+* Mutated region:  CTGACTCCTAAGGAGAAGTCT
+                            ^
 
 Mutation Impact Summary:
 Original 200-base GC Content: 43.5 %
